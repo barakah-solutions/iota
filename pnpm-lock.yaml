@@ -11,6 +11,9 @@ importers:
       '@solidjs/router':
         specifier: ^0.13.5
         version: 0.13.5(solid-js@1.8.17)
+      solid-icons:
+        specifier: ^1.1.0
+        version: 1.1.0(solid-js@1.8.17)
       solid-js:
         specifier: ^1.8.15
         version: 1.8.17
@@ -902,6 +905,11 @@ packages:
   slash@4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
+
+  solid-icons@1.1.0:
+    resolution: {integrity: sha512-IesTfr/F1ElVwH2E1110s2RPXH4pujKfSs+koT8rwuTAdleO5s26lNSpqJV7D1+QHooJj18mcOiz2PIKs0ic+A==}
+    peerDependencies:
+      solid-js: '*'
 
   solid-js@1.8.17:
     resolution: {integrity: sha512-E0FkUgv9sG/gEBWkHr/2XkBluHb1fkrHywUgA6o6XolPDCJ4g1HaLmQufcBBhiF36ee40q+HpG/vCZu7fLpI3Q==}
@@ -1816,6 +1824,10 @@ snapshots:
   signal-exit@4.1.0: {}
 
   slash@4.0.0: {}
+
+  solid-icons@1.1.0(solid-js@1.8.17):
+    dependencies:
+      solid-js: 1.8.17
 
   solid-js@1.8.17:
     dependencies:

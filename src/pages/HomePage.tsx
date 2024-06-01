@@ -1,5 +1,8 @@
 import { Component, For, createSignal } from "solid-js";
 
+import NavBar from "@components/NavBar";
+import Footer from "@components/Footer";
+
 import HeroIllustration from "@assets/illustration-office-environment.svg";
 
 const Banner: Component<{ id: string }> = ({ id }) => {
@@ -19,7 +22,7 @@ const Banner: Component<{ id: string }> = ({ id }) => {
 
 const HeroSection: Component<{ id: string }> = ({ id }) => {
     return (
-        <section id={id} class="flex flex-col py-16 lg:py-44 duration-300">
+        <section id={id} class="flex flex-col py-16 lg:py-24 duration-300">
             <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 duration-300">
                 <div class="flex-1 flex flex-col justify-center gap-8 items-start">
                     <div class="text-3xl md:text-4xl xl:text-5xl text-gray-800 duration-300">
@@ -95,7 +98,7 @@ const ServicesSection: Component<{ id: string }> = ({ id }) => {
     ]);
 
     return (
-        <section id={id} class="flex flex-col gap-8 py-32 lg:py-48 duration-300">
+        <section id={id} class="flex flex-col gap-8 py-32 lg:py-40 duration-300">
             <h3 class="font-semibold text-lg text-gray-800 leading-loose uppercase underline underline-offset-4 decoration-2 decoration-double decoration-brand-olive-green">
                 Services
             </h3>
@@ -120,11 +123,13 @@ const HomePage = () => {
         <>
             <Banner id="public-interest-wall" />
             <div class="max-w-screen-2xl mx-auto">
+                <NavBar />
                 <main class="px-8">
                     <HeroSection id="hero" />
                     <ServicesSection id="services" />
                 </main>
             </div>
+            <Footer />
         </>
     );
 };

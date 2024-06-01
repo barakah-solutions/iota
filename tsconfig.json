@@ -8,6 +8,9 @@
       "@assets/*": [
         "src/assets/*"
       ],
+      "@components/*": [
+        "src/components/*"
+      ],
       "@fonts/*": [
         "src/fonts/*"
       ],
