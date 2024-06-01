@@ -7,8 +7,8 @@ export default {
             colors: {
                 brand: {
                     white: "#ffffff",
-                    "midnight-blue": "#2f505c",
                     "jet-black": "#232323",
+                    "midnight-blue": "#2f505c",
                     "apple-green": "#8bba59",
                     "olive-green": "#bcbf4c",
                     "charcoal-purple": "#544851",
