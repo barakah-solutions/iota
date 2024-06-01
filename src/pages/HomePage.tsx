@@ -3,7 +3,7 @@ import { Component, For, createSignal } from "solid-js";
 import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 
-import HeroIllustration from "@assets/illustration-office-environment.svg";
+import HeroIllustration from "@assets/illustration-dummy-workflow.svg";
 
 const Banner: Component<{ id: string }> = ({ id }) => {
     return (
@@ -22,7 +22,7 @@ const Banner: Component<{ id: string }> = ({ id }) => {
 
 const HeroSection: Component<{ id: string }> = ({ id }) => {
     return (
-        <section id={id} class="flex flex-col py-16 lg:py-24 duration-300">
+        <section id={id} class="flex flex-col py-8 lg:py-16 duration-300">
             <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 duration-300">
                 <div class="flex-1 flex flex-col justify-center gap-8 items-start">
                     <div class="text-3xl md:text-4xl xl:text-5xl text-gray-800 duration-300">
