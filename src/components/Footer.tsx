@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer>
             <div class="bg-brand-jet-black">
-                <div class="max-w-screen-2xl min-h-72 flex items-start mx-auto px-8 py-8 lg:py-16 duration-300">
+                <div class="max-w-screen-2xl min-h-72 flex items-start mx-auto px-8 py-8 lg:py-16 transition-all">
                     <Logo mono />
                 </div>
             </div>

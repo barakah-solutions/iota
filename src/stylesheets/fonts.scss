@@ -11,7 +11,13 @@
 }
 
 @font-face {
-    font-family: "Quicksand";
-    src: url("@fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+    font-family: "Red Hat Display";
+    src: url("@fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf");
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url("@fonts/Red_Hat_Display/RedHatDisplay-Italic-VariableFont_wght.ttf");
+    font-style: italic;
 }

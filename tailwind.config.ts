@@ -16,7 +16,7 @@ export default {
             },
             fontFamily: {
                 figtree: ["Figtree"],
-                quicksand: ["Quicksand"],
+                "red-hat-display": ["Red Hat Display"],
             },
         },
     },

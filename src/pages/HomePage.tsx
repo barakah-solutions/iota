@@ -11,7 +11,7 @@ const Banner: Component<{ id: string }> = ({ id }) => {
             <a
                 href="https://www.aljazeera.com/news/2023/10/9/whats-the-israel-palestine-conflict-about-a-simple-guide"
                 target="blank"
-                class="block px-8 py-4 bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-sm lg:text-base text-center text-white duration-300"
+                class="block px-8 py-4 bg-teal-600 hover:bg-teal-700 active:bg-teal-800 text-sm lg:text-base text-center text-white transition-all"
             >
                 <b>Stand for Justice:</b> Free Palestine, End Apartheid.
                 <br class="lg:hidden" /> <b>Palestinian State Now!</b>
@@ -22,39 +22,29 @@ const Banner: Component<{ id: string }> = ({ id }) => {
 
 const HeroSection: Component<{ id: string }> = ({ id }) => {
     return (
-        <section id={id} class="flex flex-col py-8 lg:py-16 duration-300">
-            <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 duration-300">
+        <section id={id} class="flex flex-col py-8 lg:py-16 transition-all">
+            <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16 transition-all">
                 <div class="flex-1 flex flex-col justify-center gap-8 items-start">
-                    <div class="text-3xl md:text-4xl xl:text-5xl text-gray-800 duration-300">
-                        <h1 class="leading-relaxed">
-                            <u class="decoration-4 lg:decoration-8 decoration-brand-midnight-blue duration-300">
-                                Innovating
-                            </u>{" "}
-                            Sustainability,
-                        </h1>
-                        <h1 class="leading-relaxed">
-                            <u class="decoration-4 lg:decoration-8 decoration-brand-apple-green duration-300">
-                                Empowering
-                            </u>{" "}
-                            Tomorrow
-                        </h1>
+                    <div class="text-3xl md:text-4xl xl:text-5xl text-brand-jet-black transition-all">
+                        <h1 class="leading-relaxed">Start Your Exciting Journey</h1>
+                        <h1 class="leading-relaxed">With Our Solutions</h1>
                     </div>
                     <p class="text-justify text-gray-700">
-                        We are leveraging cutting-edge technology to drive innovation and efficiency. Our mission is
-                        simple: to pioneer sustainable solutions that redefine industry standards and lead the charge
-                        towards a smarter, more sustainable future.
+                        We specialize in creating solutions for the IT industry. Our mission is straightforward: to lead
+                        with sustainable solutions that set new industry standards and drive us towards a smarter, more
+                        eco-friendly future.
                     </p>
                     <div class="flex gap-8 items-center">
                         <a
                             href="#services"
-                            class="px-8 py-2 rounded-lg bg-brand-jet-black hover:bg-neutral-800 active:bg-neutral-950 font-quicksand font-semibold text-sm text-white duration-300 disabled:pointer-events-none disabled:opacity-50"
+                            class="px-8 py-2 rounded-lg bg-brand-jet-black hover:bg-neutral-800 active:bg-neutral-950 font-red-hat-display font-semibold text-sm text-white transition-all"
                         >
                             Learn More
                         </a>
                     </div>
                 </div>
-                <div class="flex-1 flex flex-row lg:flex-col justify-center duration-300">
-                    <img src={HeroIllustration} class="w-full md:w-4/5 lg:w-full duration-300" />
+                <div class="flex-1 flex flex-row lg:flex-col justify-center">
+                    <img src={HeroIllustration} class="w-full md:w-4/5 lg:w-full transition-all" />
                 </div>
             </div>
         </section>
@@ -98,7 +88,7 @@ const ServicesSection: Component<{ id: string }> = ({ id }) => {
     ]);
 
     return (
-        <section id={id} class="flex flex-col gap-8 py-32 lg:py-40 duration-300">
+        <section id={id} class="flex flex-col gap-8 py-32 lg:py-40 transition-all">
             <h3 class="font-semibold text-lg text-gray-800 leading-loose uppercase underline underline-offset-4 decoration-2 decoration-double decoration-brand-olive-green">
                 Services
             </h3>
