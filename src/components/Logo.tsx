@@ -7,7 +7,7 @@ const Logo = ({ href = "/", mono = false }) => {
             {!mono && (
                 <div class="flex flex-col py-2 lg:py-4 transition-all">
                     <h6 class="px-1 py-0.5 rounded-full border border-rose-500 bg-rose-100 text-xs text-rose-900">
-                        Beta
+                        Dev
                     </h6>
                     <h6>&nbsp;</h6>
                 </div>
