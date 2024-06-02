@@ -29,7 +29,7 @@ const HeroSection: Component<{ id: string }> = ({ id }) => {
                         <h1 class="leading-relaxed">Start Your Exciting Journey</h1>
                         <h1 class="leading-relaxed">With Our Solutions</h1>
                     </div>
-                    <p class="text-justify text-gray-700">
+                    <p class="text-justify text-neutral-700">
                         We specialize in creating solutions for the IT industry. Our mission is straightforward: to lead
                         with sustainable solutions that set new industry standards and drive us towards a smarter, more
                         eco-friendly future.
@@ -89,16 +89,16 @@ const ServicesSection: Component<{ id: string }> = ({ id }) => {
 
     return (
         <section id={id} class="flex flex-col gap-8 py-32 lg:py-40 transition-all">
-            <h3 class="font-semibold text-lg text-gray-800 leading-loose uppercase underline underline-offset-4 decoration-2 decoration-double decoration-brand-olive-green">
+            <h3 class="font-semibold text-lg text-neutral-800 leading-loose uppercase underline underline-offset-4 decoration-2 decoration-double decoration-brand-olive-green">
                 Services
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
                 <For each={availableServices()}>
                     {(service, _) => {
                         return (
-                            <div class="flex flex-col gap-2 p-6 rounded-xl bg-gray-100 hover:bg-gray-200/70 overflow-hidden cursor-pointer transition-all">
-                                <h3 class="font-semibold text-lg text-gray-800 leading-6">{service.title}</h3>
-                                <p class="text-sm text-gray-500">{service.text}</p>
+                            <div class="flex flex-col gap-2 p-6 rounded-xl bg-neutral-100 hover:bg-neutral-200/70 overflow-hidden cursor-pointer transition-all">
+                                <h3 class="font-semibold text-lg text-neutral-800 leading-6">{service.title}</h3>
+                                <p class="text-sm text-neutral-500">{service.text}</p>
                             </div>
                         );
                     }}
