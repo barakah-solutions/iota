@@ -34,12 +34,15 @@ const HeroSection: Component<{ id: string }> = ({ id }) => {
                         with sustainable solutions that set new industry standards and drive us towards a smarter, more
                         eco-friendly future.
                     </p>
-                    <div class="flex gap-8 items-center">
+                    <div class="flex gap-4 items-center">
                         <a
                             href="#services"
                             class="px-8 py-2 rounded-lg bg-brand-jet-black hover:bg-neutral-800 active:bg-neutral-950 font-red-hat-display font-semibold text-sm text-white transition-all"
                         >
                             Learn More
+                        </a>
+                        <a href="#contact-us" class="px-8 py-2 text-neutral-800 hover:underline">
+                            Schedule a Meeting
                         </a>
                     </div>
                 </div>
@@ -88,7 +91,7 @@ const ServicesSection: Component<{ id: string }> = ({ id }) => {
     ]);
 
     return (
-        <section id={id} class="flex flex-col gap-8 py-32 lg:py-40 transition-all">
+        <section id={id} class="flex flex-col gap-8 pt-32 lg:pt-40 transition-all">
             <h3 class="font-semibold text-lg text-neutral-800 leading-loose uppercase underline underline-offset-4 decoration-2 decoration-double decoration-brand-olive-green">
                 Services
             </h3>
@@ -108,6 +111,61 @@ const ServicesSection: Component<{ id: string }> = ({ id }) => {
     );
 };
 
+const ContactUsSection: Component<{ id: string }> = ({ id }) => {
+    return (
+        <section id={id} class="flex flex-col gap-8 py-32 lg:py-40 transition-all">
+            <h3 class="font-semibold text-lg text-neutral-800 leading-loose uppercase underline underline-offset-4 decoration-2 decoration-double decoration-brand-olive-green">
+                Contact
+            </h3>
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 transition-all">
+                <div class="flex-1 flex flex-col gap-2 lg:gap-4 transition-all">
+                    <h1 class="text-2xl md:text-3xl xl:text-4xl text-neutral-800 leading-relaxed transition-all">
+                        We would love to hear from you!
+                    </h1>
+                    <p class="text-justify text-neutral-700">
+                        As part of our commitment to building meaningful relationships, we offer first-time clients a
+                        complimentary consultation session. This session provides valuable insights and sets the stage
+                        for our collaboration. Feel free to reach out to us and we will get in touch with you.
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-center md:justify-start lg:justify-end transition-all">
+                    <form class="md:min-w-96 w-full md:w-fit flex flex-col gap-6 transition-all" novalidate>
+                        <fieldset class="flex flex-col gap-6 disabled:opacity-80 disabled:pointer-events-none">
+                            <input
+                                placeholder="Subject"
+                                class="px-4 py-1.5 rounded-lg outline-none ring-1 ring-neutral-300 focus:ring-brand-olive-green bg-neutral-100 hover:bg-neutral-200/60 text-brand-jet-black transition-all"
+                            />
+                            <input
+                                placeholder="Name"
+                                class="px-4 py-1.5 rounded-lg outline-none ring-1 ring-neutral-300 focus:ring-brand-olive-green bg-neutral-100 hover:bg-neutral-200/60 text-brand-jet-black transition-all"
+                            />
+                            <input
+                                placeholder="Email"
+                                class="px-4 py-1.5 rounded-lg outline-none ring-1 ring-neutral-300 focus:ring-brand-olive-green bg-neutral-100 hover:bg-neutral-200/60 text-brand-jet-black transition-all"
+                            />
+                            <input
+                                placeholder="Country"
+                                class="px-4 py-1.5 rounded-lg outline-none ring-1 ring-neutral-300 focus:ring-brand-olive-green bg-neutral-100 hover:bg-neutral-200/60 text-brand-jet-black transition-all"
+                            />
+                            <textarea
+                                placeholder="Message"
+                                class="min-h-48 px-4 py-1.5 rounded-lg outline-none ring-1 ring-neutral-300 focus:ring-brand-olive-green bg-neutral-100 hover:bg-neutral-200/60 text-brand-jet-black transition-all"
+                            />
+                            <button
+                                type="submit"
+                                class="px-8 py-2 rounded-lg bg-brand-jet-black hover:bg-neutral-800 active:bg-neutral-950 font-red-hat-display font-semibold text-sm text-white transition-all"
+                                disabled
+                            >
+                                Post
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 const HomePage = () => {
     return (
         <>
@@ -117,6 +175,7 @@ const HomePage = () => {
                 <main class="px-8">
                     <HeroSection id="hero" />
                     <ServicesSection id="services" />
+                    <ContactUsSection id="contact-us" />
                 </main>
             </div>
             <Footer />
