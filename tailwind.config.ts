@@ -6,12 +6,12 @@ export default {
         extend: {
             colors: {
                 brand: {
-                    white: "#ffffff",
+                    white: "#FFFFFF",
                     "jet-black": "#232323",
-                    "midnight-blue": "#2f505c",
-                    "apple-green": "#8bba59",
-                    "olive-green": "#bcbf4c",
-                    "charcoal-purple": "#544851",
+                    "sea-blue": "#2F506C",
+                    "apple-green": "#8BBA59",
+                    "olive-green": "#BCBF4C",
+                    "charcoal-purple": "#673C5C",
                 },
             },
             fontFamily: {
